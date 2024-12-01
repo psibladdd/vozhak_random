@@ -1,121 +1,121 @@
-import React, { useState } from 'react';
-import './App.css';
+  import React, { useState } from 'react';
+  import './App.css';
 
-function App() {
-  const [selectedItem, setSelectedItem] = useState(null);
-const items = [
-  '@wealixss',
-  '@eto_aliona',
-  '@meow_sofi',
-    '@UFcdjxbvq',
-  '@oreshek_art',
-  '@vo1tor',
-  '@Mi1ker',
-  '@Ne2PY',
-  '@NikomuNeSkaju',
-  '@anvoily',
-  '@shubinarzhachnaya',
-  '@gorobca',
-  '@katezu29',
-  '@MentaL08',
-  '@n31r0t0x1n',
-  '@dashaskan',
-  '@Xella159',
-  '@lerylis',
-  '@artinmartine',
-  '@kkkeeeshaaa',
-  '@Vladsssi',
-  '@IHNfaml',
-  '@puffustik7',
-  '@korabl1na',
-  '@vs_mary',
-  '@Ksenik_Gol',
-  '@lizabravo10',
-  '@kukuruzinayana',
-  '@lissez_s',
-  '@HoityToit',
-  '@darraa',
-  '@utenok56',
-  '@dima5_zero',
-  '@darinasss24',
-  '@rosanovaka',
-  '@vill0chka',
-  '@tysha_sys',
-  '@pikasha_s',
-  '@alex_shatskiy',
-  '@alexseele',
-  '@svmillive',
-  '@Mussopickle',
-  '@saniiyok',
-  '@DivineBeaver',
-  '@mariaanohinaa',
-  '@siimonnqq',
-  '@tatarstanvibe',
-  '@prosto_kvashka',
-  '@Sashakgnv',
-  '@anstdkhnaa',
-  '@rinabray',
-  '@alexaf29',
-  '@taofal',
-  '@anastaishha27',
-  '@yasyavishnya',
-  '@sepperent',
-  '@VIKTORIIAFED',
-  '@marquze',
-  '@kossssenko',
-  '@mariavngr',
-  '@joestarich',
-  '@otfct',
-  '@ownerbrob',
-  '@Aszuva',
-  '@anglnik',
-  '@vurdalak354',
-  '@cherumia',
-  '@trappanborn',
-  '@Oleegatorr',
-  '@Mio171',
-  '@caxapo4ek',
-  '@le_rororo',
-  '@aleviika',
-  '@a_crook',
-  '@D_u_d_d_a',
-  '@jolfredteleg',
-  '@katerina_fun_8',
-  '@helya_wise',
-  '@mhde_mmm',
-  '@manowik',
-  '@vikossskokos',
-  '@mwwaks',
-  '@parkmvch',
-  '@Toriyaf',
-  '@liquidatorrrr',
-  '@kpchpchch',
-  '@G1eb_Bus',
-  '@cereal_killer3450d',
-  '@yaaasssya',
-  '@ksssushi',
-  '@supoly_arina',
-  '@tell_mdd',
-  '@directorvish',
-  '@MrOrangeFox'
+  function App() {
+    const [selectedItem, setSelectedItem] = useState(null);
+  const items = [
+    'Соколова Валерия',
+    'Фатеева Александра',
+    'Павлова Ольга',
+    'Стародумова Екатерина',
+    'Ивашкина Елизавета',
+    'Шандер Елизавета',
+    'Мавлютов Дмитрий',
+    'Новикова Марина',
+    'Зайцева Васса',
+    'Кораблина Виктория',
+    'Иванова Евгения',
+    'Кузина Яна',
+    'Булдакова Екатерина',
+    'Литвиненко Елизавета',
+    'Шабанов Кирилл',
+    'Ермакова Ксения',
+    'Григоришина Елизавета',
+    'Федорова Виктория',
+    'Иваненко Александра',
+    'Подогова Галина',
+    'Смыслов Артем',
+    'Зенин Лев',
+    'Кравцов Данил',
+    'Малахов Александр',
+    'Силантьев Дмитрий',
+    'Шубина Софья',
+    'Затеева Ярослава',
+    'Антонова Дарина',
+    'Кушнарева Анна',
+    'Алексеев Артемий',
+    'Ивочкина София',
+    'Петижева Амалия',
+    'Анохина Мария',
+    'Никополиди Ангелина',
+    'Архипова Виктория',
+    'Копейкина Ксения',
+    'Чумичев Павел',
+    'Лобанов Олег',
+    'Орешников Егор',
+    'Росанова Кристина',
+    'Самойлова Екатерина',
+    'Полякова София',
+    'Мударисов Марат',
+    'Малофеев Андрей',
+    'Асадчий Глеб',
+    'Хаустов Максим',
+    'Алешина Анна',
+    'Горобец Марина',
+    'Доколина Виктория',
+    'Чернышева Дарья',
+    'Козловский Данила',
+    'Виноградова Мария',
+    'Файзылхакова Альфия',
+    'Барканова Ксения',
+    'Богданова Ольга',
+    'Мещерякова Юлия',
+    'Дюдина Валерия',
+    'Безрук Вадим',
+    'Пиканина Светлана',
+    'Забавнова Екатерина',
+    'Куликова Яна',
+    'Подкатнова Людмила',
+    'Кондракова Яна',
+    'Полторацкая Алёна',
+    'Бойко Дарина',
+    'Фридман Виктория',
+    'Голышева Ксения',
+    'Богданов Георгий',
+    'Суполярина Арина',
+    'Стадухина Анастасия',
+    'Степанян Анастасия',
+    'Закатнова Арина',
+    'Краснов Владислав',
+    'Шацкий Алексей',
+    'Алещева Виктория',
+    'Косенко Дарья',
+    'Скворцова Дарья',
+    'Пархомович Георгий',
+    'Волторнист Георгий',
+    'Медяник Семён',
+    'Козак Артём',
+    'Давыденко Денис',
+    'Шаргородская Елизавета',
+    'Орлова Виолетта',
+    'Волчанинова Анна',
+    'Мурадалиев Мурад',
+    'Емельяненко Дмитрий',
+    'Васильева Марина',
+    'Жордания Алика',
+    'Овинов Никита',
+    'Зубова Екатерина',
+    'Каганова Александра',
+    'Абрамова Александра'
 ];
 
 
-  const handleClick = () => {
-    const randomIndex = Math.floor(Math.random() * items.length);
-    setSelectedItem(items[randomIndex]);
-  };
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="content-box">
-          {selectedItem && <p className="text">{selectedItem}</p>}
-          <button onClick={handleClick}>Выбрать счастливчика!</button>
-        </div>
-      </header>
-    </div>
-  );
-}
+    const handleClick = () => {
+      const randomIndex = Math.floor(Math.random() * items.length);
+      setSelectedItem(items[randomIndex]);
+    };
 
-export default App;
+    return (
+      <div className="App">
+        <header className="App-header">
+          <div className="content-box">
+            {selectedItem && <p className="text">{selectedItem}</p>}
+            <button onClick={handleClick}>Выбрать счастливчика!</button>
+          </div>
+        </header>
+      </div>
+    );
+  }
+
+  export default App;
