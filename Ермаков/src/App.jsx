@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <GameBoard setHappiness={setHappiness} />
+      <gameBoard setHappiness={setHappiness} />
     </div>
   );
 }
