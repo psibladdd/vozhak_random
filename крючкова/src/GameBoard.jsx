@@ -47,10 +47,10 @@ const StreetLamp = ({position,isNight}) => {
 
 }
 const App = () => {
-    const [IsNight,  setIsNight] = useState(false);
+    const [isNight,  setIsNight] = useState(false);
 
     const toggleNight = () => {
-         setIsNight(!IsNight)
+         setIsNight(!isNight)
     }
 
      return (//3
@@ -59,7 +59,12 @@ const App = () => {
                    onClick={toggleNight}>
                    смена
                    </button>
-            <Canvas style={{ background: IsNight ? 'black' : 'skyblue' }}>
+            <Canvas style={{ background: isNight ? 'black' : 'skyblue' }}>
+                <Cube rot={[0, Math.PI/4, 0]} size={[1,5, 1]} color={"purple"} pos={[0,2.4,0]}/>
+                <Road rot={[0,Math.PI/4,0]} pos= {[0.88,0.1,0.88]} size={[3,0.1,0.4]} />
+                <StreetLamp position={[-0.9, 0.05, -1]} isNight={isNight} />
+        <StreetLamp position={[0.4, 0.05, 1]} isNight={isNight} />
+        <StreetLamp position={[0.3, 0.05, -0.3]} isNight={isNight} />
                 <Cube rot={[0, Math.PI/4, 0]} size={[3, 0.25, 3]} color={"green"} pos={[0,0,0]}/>
                 <OrbitControls
                     minDistance={5}
