@@ -29,21 +29,25 @@ const Road = ({rot,size,pos}) => {
         </group>
     );
 }
-const StreetLamp = ({position,isNight}) => {
-    return (
-        <group position={position}>
-            <mesh position={[0,0.2,0]}>
-                <cylinderGeometry args={[0.02,0.02,0.3,16]}/>
-                <meshBasicMaterial color="black"/>
-            </mesh>
+const StreetLamp = ({ position, isNight }) => {
+  return (
+    <group position={position}>
+      <mesh position={[0, 0.2, 0]}>
+        <cylinderGeometry args={[0.02, 0.02, 0.3, 16]} />
+        <meshBasicMaterial color="black" />
+      </mesh>
 
-<mesh position={[0,0.35,0]}>
-    <sphereGeometry args={[0.05,16,16]}/>
-    <meshBasicMaterial color={isNight ? "yellow" : "white"}/>
-   </mesh>
-        </group>
-    );
-}
+      <mesh position={[0, 0.35, 0]}>
+        <sphereGeometry args={[0.05, 16, 16]} />
+        <meshBasicMaterial
+          color={isNight ? "yellow" : "white"}
+        />
+      </mesh>
+    </group>
+  );
+};
+
+
 
 const App = () => {
     const [isNight, setIsNight] = useState(false);
