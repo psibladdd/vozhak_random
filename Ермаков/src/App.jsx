@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import gameBoard from './gameBoard';
+import GameBoard from './GameBoard';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <gameBoard setHappiness={setHappiness} />
+      <GameBoard setHappiness={setHappiness} />
     </div>
   );
 }
